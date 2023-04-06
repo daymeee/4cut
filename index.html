@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>제주네컷</title>
+    <title>후쿠오카네컷</title>
     <style>
       /* 이서윤체 폰트 적용을 위한 코드 */
       @font-face {
@@ -26,7 +26,7 @@
 
       .container {
         width: 390px;
-        background-color: #f56d2f;
+        background-color: #f1bbba;
         height: 100%;
       }
 
@@ -62,24 +62,24 @@
       }
 
       #image1 {
-        background-image: url("./img1.png");
+        background-image: url("./image1.jpg");
       }
 
       #image2 {
-        background-image: url("./img2.png");
+        background-image: url("./image2.jpg");
       }
 
       #image3 {
-        background-image: url("./img3.png");
+        background-image: url("./image3.jpg");
       }
 
       #image4 {
-        background-image: url("./img4.png");
+        background-image: url("./image4.jpg");
       }
 
       .photo-description {
         color: white;
-        background-color: #f56d2f;
+        background-color: #f1bbba;
         width: fit-content;
         padding: 0 20px;
         margin-bottom: 10px;
@@ -120,9 +120,12 @@ function showText(number) {
   } else if (number === 2) {
     document.querySelector("#desc2").classList.remove("hideText");
     document.querySelector("#desc2").classList.add("showText");
-  } else {
+  } else if{
     document.querySelector("#desc3").classList.remove("hideText");
     document.querySelector("#desc3").classList.add("showText");
+  } else {number === 3) {
+    document.querySelector("#desc4").classList.remove("showText");
+    document.querySelector("#desc4").classList.add("hideText");
   }
 }
 
@@ -136,16 +139,19 @@ function hideText(number) {
   } else if (number === 2) {
     document.querySelector("#desc2").classList.remove("showText");
     document.querySelector("#desc2").classList.add("hideText");
-  } else {
+  } else if{number === 3) {
     document.querySelector("#desc3").classList.remove("showText");
     document.querySelector("#desc3").classList.add("hideText");
+  } else {
+    document.querySelector("#desc4").classList.remove("showText");
+    document.querySelector("#desc4").classList.add("hideText");
   }
 }
 
 // 클릭 기능
 // 1. 선택된 사진의 숫자를 가진 텍스트를 alert 형태로 출력해줌
 function alertText(number) {
-   alert(포촌쿠키 제주도 여행🍊🧡);
+   alert(후쿠오카 여행✈💓);
 }
     </script>
   </head>
@@ -160,7 +166,7 @@ function alertText(number) {
            onclick="alertText(1)"
         >
    <span id="desc1" class="photo-description">
-      엄지 아이폰 위기 직전
+      온천 수증기
    </span>
 </div>
 <div
@@ -170,7 +176,7 @@ function alertText(number) {
    onclick="alertText(2)"
 >
    <span id="desc2" class="photo-description">
-      제주 바람을 뚫고
+      거울샷
    </span>
 </div>
 <div
@@ -181,22 +187,23 @@ function alertText(number) {
    onclick="alertText(3)"
 >
    <span id="desc3" class="photo-description">
-   
+   짱구 마을
 </span>
 </div>
-        <div class="photo-frame">
-            <div class="photo-frame">
-                <iframe
-                class="video"
-                src="https://www.youtube.com/embed/GLBBfhKsumg"
-                frameborder="0"
-                ></iframe>
-            </div>
-        </div>
+       <div
+   id="image4"
+   class="photo-frame"
+   onmouseover="showText(4)"
+   onmouseout="hideText(4)"
+   onclick="alertText(4)"
+>
+   <span id="desc4" class="photo-description">
+   오잉
+</span>
       </div>
       <div class="footer">
-        <p class="f-title">포촌쿠키 제주도🍊🧡</p>
-        <p class="f-date">2023.03.18-2023.03.20</p>
+        <p class="f-title">후쿠오카 여행✈💓</p>
+        <p class="f-date">2023.01</p>
       </div>
     </div>
   </body>
