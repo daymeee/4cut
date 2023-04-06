@@ -70,11 +70,11 @@
       }
 
       #image3 {
-        background-image: url("./image3.jpg");
+        background-image: url("./image4.jpg");
       }
 
       #image4 {
-        background-image: url("./image4.jpg");
+        background-image: url("./image5.jpg");
       }
 
       .photo-description {
@@ -88,26 +88,14 @@
         bottom: 0;
         transform: translate(-50%);
         left: 50%;
-        opacity: 0;
+    
       }
 
       .video {
        width: 100%;
        height: 100%;
     }   
-    /* opacity : 투명도를 의미해요! opacity는 1에 가까워 질 수록 불투명하다. 즉 다 보인다. */
-    
-    .showText {
-       opacity: 1;
-        transition: opacity 0.5s linear;
-    }
-
-/* opacity : 투명도를 의미해요! opacity는 0에 가까워 질 수록 투명하다. 즉 안보인다. */
-/* transition : 나타날 때 0.5초동안 천천히 나타나는 효과를 주라는 의미에요 */
-    
-    .hideText {
-       opacity: 0;
-    }
+   
     </style>
     <script>
         // 텍스트가 보여지는 기능
@@ -166,7 +154,7 @@ function alertText(number) {
            onclick="alertText(1)"
         >
    <span id="desc1" class="photo-description">
-      온천 수증기
+      온천마을 인증샷
    </span>
 </div>
 <div
@@ -176,7 +164,7 @@ function alertText(number) {
    onclick="alertText(2)"
 >
    <span id="desc2" class="photo-description">
-      거울샷
+      엘베에서 찰칵
    </span>
 </div>
 <div
@@ -187,7 +175,7 @@ function alertText(number) {
    onclick="alertText(3)"
 >
    <span id="desc3" class="photo-description">
-   짱구 마을
+   술 마신 부리들
 </span>
 </div>
        <div
@@ -198,7 +186,7 @@ function alertText(number) {
    onclick="alertText(4)"
 >
    <span id="desc4" class="photo-description">
-   오잉
+   모기와 함께 춤을
 </span>
       </div>
       <div class="footer">
